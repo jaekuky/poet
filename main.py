@@ -1,10 +1,10 @@
 # env 파일을 사용하기 위한 라이브러리 import
-#from dotenv import load_dotenv
-#load_dotenv()
+from dotenv import load_dotenv
+load_dotenv()
 
 # langchain, chat 모드 사용   
 from langchain.chat_models import ChatOpenAI
-chat_model = ChatOpenAI(OPENAI_API_KEY=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)
+chat_model = ChatOpenAI()
 
 # Llama 사용
 # from langchain.llms import CTransformers
