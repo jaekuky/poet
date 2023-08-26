@@ -4,7 +4,7 @@
 
 # langchain, chat 모드 사용   
 from langchain.chat_models import ChatOpenAI
-chat_model = ChatOpenAI()
+chat_model = ChatOpenAI(OPENAI_API_KEY=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)
 
 # Llama 사용
 # from langchain.llms import CTransformers
