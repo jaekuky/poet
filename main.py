@@ -15,10 +15,17 @@ chat_model = ChatOpenAI()
 
 # streamlit으로 Frontend 만들기
 import streamlit as st
+from PIL import Image
+
 st.title('인공지능 시인')
+
+img = Image.open("AI_Poem.png")
+st.image(img)
+
 content = st.text_input('시의 주제를 제시해 주세요')
 
-if st.button('시 작성 요청하기'):
-    with st.spinner('시 작성 중...'):
-        result  = chat_model.predict("Write poem about" + content)
+if st.button('시 작성 요청'):
+    with st.spinner('시 작성 중... 잠시만 기다려 주세요'):
+        result  = chat_model.predict(content + "에 대한 시를 써주세요")
         st.write(result)
+
