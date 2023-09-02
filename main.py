@@ -19,7 +19,7 @@ from PIL import Image
 
 st.markdown("<style>.stApp{margin-top: 0px;}</style)", unsafe_allow_html=True)
 
-st.title("AI Poet")
+st.title("Ink & Byte")
 st.markdown("### Your Topics, Our AI Poems")
 
 col1, col2, col3 = st.columns([0.2, 0.6, 0.2])
