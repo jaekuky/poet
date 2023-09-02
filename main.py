@@ -17,12 +17,17 @@ chat_model = ChatOpenAI()
 import streamlit as st
 from PIL import Image
 
-st.title('인공지능 시인')
+st.markdown("<style>.stApp{margin-top: 0px;}</style)", unsafe_allow_html=True)
 
-img = Image.open("AI_Poem.png")
-st.image(img)
+st.title("AI Poet")
+st.markdown("### Your Topics, Our AI Poems")
 
-content = st.text_input('시의 주제를 제시해 주세요')
+col1, col2, col3 = st.columns([0.2, 0.6, 0.2])
+with col2:
+    img = Image.open("AI_Poet.png")
+    st.image(img)
+
+content = st.text_input("시의 주제를 제시해 주세요")
 
 if st.button('시 작성 요청'):
     with st.spinner('시 작성 중... 잠시만 기다려 주세요'):
