@@ -1,6 +1,6 @@
 # env 파일을 사용하기 위한 라이브러리 import
-# from dotenv import load_dotenv
-# load_dotenv()
+from dotenv import load_dotenv
+load_dotenv()
 
 # langchain, chat 모드 사용   
 from langchain.chat_models import ChatOpenAI
@@ -17,9 +17,10 @@ chat_model = ChatOpenAI()
 import streamlit as st
 from PIL import Image
 
-st.markdown("<style>.stApp{margin-top: 0px;}</style)", unsafe_allow_html=True)
+#st.markdown("<style>.stApp{margin-top: 0px;}</style)", unsafe_allow_html=True)
+st.write("<style>div.block-container{padding-top:2rem;}</style>", unsafe_allow_html=True)
 
-st.markdown("## Ink & Byte")
+st.markdown("## AI & Poem")
 st.markdown("### Your Topics, Our AI Poems")
 
 col1, col2, col3 = st.columns([0.325, 0.35, 0.325])
