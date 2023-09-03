@@ -22,7 +22,7 @@ st.write("<style>div.block-container{padding-top:2rem;}</style>", unsafe_allow_h
 st.markdown("## AI & Poem")
 st.markdown("### Your Topics, Our AI Poems")
 
-col1, col2, col3 = st.columns([0.3, 0.4, 0.3])
+col1, col2, col3 = st.columns([0.25, 0.5, 0.25])
 with col2:
     img = Image.open("AI-Poet.png")
     st.image(img)
