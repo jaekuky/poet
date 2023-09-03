@@ -17,13 +17,12 @@ chat_model = ChatOpenAI()
 import streamlit as st
 from PIL import Image
 
-#st.markdown("<style>.stApp{margin-top: 0px;}</style)", unsafe_allow_html=True)
 st.write("<style>div.block-container{padding-top:2rem;}</style>", unsafe_allow_html=True)
 
 st.markdown("## AI & Poem")
 st.markdown("### Your Topics, Our AI Poems")
 
-col1, col2, col3 = st.columns([0.325, 0.35, 0.325])
+col1, col2, col3 = st.columns([0.3, 0.4, 0.3])
 with col2:
     img = Image.open("AI-Poet.png")
     st.image(img)
