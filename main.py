@@ -1,6 +1,6 @@
 # env 파일을 사용하기 위한 라이브러리 import
-from dotenv import load_dotenv
-load_dotenv()
+#from dotenv import load_dotenv
+#load_dotenv()
 
 # langchain, chat 모드 사용   
 from langchain.chat_models import ChatOpenAI
