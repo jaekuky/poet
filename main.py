@@ -38,7 +38,6 @@ content = st.text_input("시의 주제를 제시해 주세요")
 # 시 작성 & 시 낭송
 # from gtts import gTTS
 import gTTS
-from io import BytesIO
 if st.button("시 작성 요청"):
     with st.spinner("시 작성 중... 잠시만 기다려 주세요"):
         # 시 작성
