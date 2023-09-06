@@ -3,4 +3,4 @@ openai
 streamlit
 pillow
 streamlit-extras
-gtts
+gTTS
