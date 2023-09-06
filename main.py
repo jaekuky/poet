@@ -43,6 +43,7 @@ if st.button("시 작성 요청"):
         poem  = chat_model.predict(content + "에 대한 시를 써주세요")
         st.write(poem)
 
+    with st.spinner("시 낭송을 위한 음성 준비중... 잠시만 기다려 주세요"):
         # Google TTS를 사용하여 시 낭송
         tts = gTTS(text=poem, lang="ko", slow=False)
         tts.save("poem.mp3")
