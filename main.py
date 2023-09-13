@@ -53,4 +53,4 @@ if st.button("시 작성 요청"):
 from streamlit_extras.buy_me_a_coffee import button
 button(username="jakukyr", floating=True, width=221) 
 
-st.write("Powered by ChatGPT, LangChain")
+st.write("Powered by ChatGPT and LangChain")
