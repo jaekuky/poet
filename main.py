@@ -32,6 +32,7 @@ with pictureCols[1]:
     st.image(img)
 
 # 시 주제 입력 받음
+st.markdown("#### 주제를 제시해 주시면, 주제에 대한 시를 작성해 드립니다.")
 content = st.text_input("시의 주제를 제시해 주세요")
     
 # 버튼 만들기
