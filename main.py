@@ -60,7 +60,7 @@ st.write("""
         // 3. Add the ad to the page
         document.body.appendChild(ad.render())
     </script>
-    """
+    """, unsafe_allow_html=True
 )
 
 st.write("Powered by ChatGPT and LangChain")
