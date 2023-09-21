@@ -63,4 +63,13 @@ st.write("""
     """, unsafe_allow_html=True
 )
 
+st.write(
+    """
+    <head>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7349192768683799"
+     crossorigin="anonymous"></script>
+    </head>
+    """, unsafe_allow_html=True
+)
+
 st.write("Powered by ChatGPT and LangChain")
