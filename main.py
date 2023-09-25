@@ -48,7 +48,6 @@ if st.button("시 작성 요청"):
 st.write(
     """
     <head>
-        <meta name="google-site-verification" content="3BBBSuL1J8Gd4EVa760rbz9eZxcsGzqKgffW052wcEY" />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7349192768683799"
      crossorigin="anonymous"></script>
     </head>
