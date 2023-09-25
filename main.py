@@ -40,11 +40,12 @@ if st.button("시 작성 요청"):
         st.audio("poem.mp3")
    
 # 수익화 - Buy me a coffee
-#from streamlit_extras.buy_me_a_coffee import button
-#button(username="jakukyr", floating=True, text="Buy me a coffee", font="Lato", width=250) 
+from streamlit_extras.buy_me_a_coffee import button
+button(username="jakukyr", floating=True, text="Buy me a coffee", font="Lato", width=250) 
 
 # 수익화 - Google Adsense
 # HTML <head> 태그 수정
+'''
 st.write(
     """
     <head>
@@ -72,5 +73,5 @@ st.write("""
     </script>
     """, unsafe_allow_html=True
 )
-
+'''
 st.write("Powered by ChatGPT and LangChain")
