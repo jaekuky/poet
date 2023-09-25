@@ -44,6 +44,17 @@ if st.button("시 작성 요청"):
 #button(username="jakukyr", floating=True, text="Buy me a coffee", font="Lato", width=250) 
 
 # 수익화 - Google Adsense
+# HTML <head> 태그 수정
+st.write(
+    """
+    <head>
+        <meta name="google-site-verification" content="3BBBSuL1J8Gd4EVa760rbz9eZxcsGzqKgffW052wcEY" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7349192768683799"
+     crossorigin="anonymous"></script>
+    </head>
+    """, unsafe_allow_html=True
+)
+
 # 1. Add the custom JavaScript code block
 st.write("""
     <script>
@@ -60,15 +71,6 @@ st.write("""
         // 3. Add the ad to the page
         document.body.appendChild(ad.render())
     </script>
-    """, unsafe_allow_html=True
-)
-
-st.write(
-    """
-    <head>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7349192768683799"
-     crossorigin="anonymous"></script>
-    </head>
     """, unsafe_allow_html=True
 )
 
