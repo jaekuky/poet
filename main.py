@@ -4,7 +4,6 @@ chat_model = ChatOpenAI()
 
 # streamlit으로 Frontend 만들기
 import streamlit as st
-from PIL import Image
 
 # 화면 상단 여백 제거
 st.write("<style>div.block-container{padding-top:2rem;}</style>", unsafe_allow_html=True)
