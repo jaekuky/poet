@@ -9,17 +9,6 @@ from PIL import Image
 # 화면 상단 여백 제거
 st.write("<style>div.block-container{padding-top:2rem;}</style>", unsafe_allow_html=True)
 
-# 웹페이지 제목
-st.title("AI & Poem")
-st.markdown("### Your Topics, Our AI Poems")
-
-# 그림 삽입
-pictureCols = []
-pictureCols = st.columns([0.25, 0.5, 0.25])
-with pictureCols[1]:
-    img = Image.open("AI-Poet.png")
-    st.image(img)
-
 # 시 주제 입력 받음
 st.markdown("#### 주제를 제시해 주시면, 주제에 대한 시를 작성해 드립니다.")
 content = st.text_input("시의 주제를 제시해 주세요")
@@ -38,9 +27,3 @@ if st.button("시 작성 요청"):
         tts = gTTS(text=poem, lang="ko", slow=False)
         tts.save("poem.mp3")
         st.audio("poem.mp3")
-   
-# 수익화 - Buy me a coffee
-from streamlit_extras.buy_me_a_coffee import button
-button(username="jakukyr", floating=True, text="Buy me a coffee", font="Lato", width=250) 
-
-st.write("Powered by ChatGPT and LangChain")
