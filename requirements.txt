@@ -2,6 +2,3 @@ gTTS
 langchain
 openai
 streamlit
-pillow
-streamlit-extras
-
